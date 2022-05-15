@@ -1,7 +1,10 @@
+
+
+
 function Home() {
   return (
-    <div>
-      首页
+    <div className="container">
+     xxx
     </div>
   )
 }
