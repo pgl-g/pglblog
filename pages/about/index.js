@@ -1,7 +1,12 @@
+
+import Header from '../../components/Header';
+
 function About() {
   return (
     <div>
-      关于
+      <Header />
+
+      关于我
     </div>
   )
 }
