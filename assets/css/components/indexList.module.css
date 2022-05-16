@@ -32,6 +32,10 @@
   padding-bottom: 12px;
 }
 
+.listItem hr {
+    border-bottom: 1px solid #f6f6f6;
+}
+
 .flex_content .flex_1 {
   flex: 1;
 }
@@ -50,6 +54,7 @@
 }
 
 .flex_1 .contents {
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
