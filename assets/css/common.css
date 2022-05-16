@@ -7,8 +7,15 @@ body {
 }
 
 .container .content-right {
-  padding: 0 6px;
+  padding: 16px 6px;
+  width: 100%;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+}
+
+.container .content-right::-webkit-scrollbar {
+  display: none;
 }
 .container .content {
-  margin: 16px 0;
+  
 }

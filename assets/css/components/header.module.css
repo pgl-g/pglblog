@@ -1,7 +1,6 @@
 .header {
   background-color: #fff;
   height: 60px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);
 }
 .header_left {
   line-height: 60px;
