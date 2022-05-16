@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 import { Menu } from 'antd';
@@ -8,12 +8,14 @@ import MenusStyles from '../../assets/css/components/menu.module.css';
 
 // 下拉菜单
 const Menus = (props) => {
-
   const navs = props.navs;
 
   const router = props.router;
 
   const [currentNav, setCurrentNav] = useState(navs[0] ? navs[0].type : '');
+  
+
+  // console.log(currentNav, router);
 
   // 每次进入的时候都会重新render组件，所以可以在生命周期中实现
   useEffect(() => {

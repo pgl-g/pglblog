@@ -1,3 +1,14 @@
 body {
   background-color: #f6f6f6;
 }
+
+.container .content-left {
+  margin-left: 6px;
+}
+
+.container .content-right {
+  padding: 0 6px;
+}
+.container .content {
+  margin: 16px 0;
+}

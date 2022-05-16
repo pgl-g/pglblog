@@ -1,7 +1,19 @@
 .menuContainer {
   min-width: 400px;
+  border-bottom: 0;
 }
 
+.ant-menu {
+  line-height: 60px;
+}
 .menuItem {
+  font-size: 16px;
+}
 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {
+  border: none;
+}
+
+.ant-menu-item > .ant-menu-title-content {
+  border: none;
 }
