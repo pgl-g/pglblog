@@ -5,6 +5,8 @@ import { Menu } from 'antd';
 
 import MenusStyles from '../../assets/css/components/menu.module.css';
 
+
+// 下拉菜单
 const Menus = (props) => {
 
   const navs = props.navs;
@@ -25,7 +27,6 @@ const Menus = (props) => {
 
   return (
     <Menu className={MenusStyles.menuContainer} mode="horizontal" defaultSelectedKeys={[currentNav]} selectedKeys={[currentNav]}>
-      
       {
         navs.map(item => (
           <Menu.Item className={MenusStyles.menuItem} key={item.type}>
