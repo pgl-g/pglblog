@@ -1,11 +1,9 @@
 import React, { memo } from 'react';
 import { Row, Col } from 'antd';
-
 import Menu from '../Menus';
-
 import { NAVS } from '../../assets/js/contants';
-
 import styles from '../../assets/css/components/header.module.css';
+
 
 const Header = memo(() => {
   return (

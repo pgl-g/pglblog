@@ -6,6 +6,7 @@ import IndexListStyle from '../../assets/css/components/indexList.module.css';
 
 
 const IndexList = memo(() => {
+  
   const dataSource = useMemo(() => {
     return INDEXLIST
   }, [])

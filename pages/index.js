@@ -10,7 +10,7 @@ export default function Home() {
     <div className='container'>
       <Head>
         <title>编程shy-个人博客</title>
-        <link rel="icon" href="../favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <Header />

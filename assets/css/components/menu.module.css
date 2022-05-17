@@ -1,19 +1,23 @@
-.menuContainer {
-  min-width: 400px;
-  border-bottom: 0;
+.header_menu {
+  margin-bottom: 0;
+  padding-left: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-.ant-menu {
-  line-height: 60px;
+.header_menu .active a {
+  color: #1e80ff;
 }
+
+.header_menu .default a {
+  color: #86909c;
+}
+
 .menuItem {
+  min-width: 120px;
+  text-align: center;
   font-size: 16px;
-}
-
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {
-  border: none;
-}
-
-.ant-menu-item > .ant-menu-title-content {
-  border: none;
+  line-height: 60px;
 }
