@@ -1,10 +1,6 @@
 body {
   background-color: #f6f6f6;
 }
-
-.container .content-left {
-}
-
 .container .content-right {
   padding: 16px;
   width: 100%;
@@ -14,7 +10,4 @@ body {
 
 .container .content-right::-webkit-scrollbar {
   display: none;
-}
-.container .content {
-  
 }
