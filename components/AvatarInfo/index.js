@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { GithubFilled, WechatFilled, QqOutlined } from '@ant-design/icons';
 import StyleAvatar from '../../assets/css/components/avatarInfo.module.css';
 
