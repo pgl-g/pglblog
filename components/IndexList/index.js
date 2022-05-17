@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { EyeFilled } from '@ant-design/icons';
 import IndexListStyle from '../../assets/css/components/indexList.module.css';
 
 
-const IndexList = () => {
+const IndexList = memo(() => {
   return (
     <div className={IndexListStyle.container}>
       <div className={IndexListStyle.listItem}>
@@ -181,6 +181,6 @@ const IndexList = () => {
       </div>
     </div>
   )
-}
+})
 
 export default IndexList;

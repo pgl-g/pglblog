@@ -1,3 +1,4 @@
+import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
 import Header from '../components/Header';
