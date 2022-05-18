@@ -3,7 +3,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
 import Header from '../../components/Header';
-import IndexList from '../../components/IndexList';
+import Collection from '../../components/Collection';
 import AvatarInfo from '../../components/AvatarInfo';
 
 import ArticleListsStyle from '../../assets/css/pages/articlelists.module.css';
@@ -23,7 +23,7 @@ function ArticleLists() {
             <AvatarInfo />
           </Col>
           <Col className={ArticleListsStyle.content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
-            <IndexList />
+            <Collection />
           </Col>
         </Row>
       </div>

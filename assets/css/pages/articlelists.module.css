@@ -4,3 +4,6 @@
   overflow-y: scroll;
   height: calc(100vh - 60px);
 }
+.articlelists_container .content_right::-webkit-scrollbar {
+  display: none;
+}
