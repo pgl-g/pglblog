@@ -14,6 +14,11 @@ const NAVS = [
     link: '/about',
     type: 'about'
   },
+  {
+    name: '简历',
+    link: '/resume',
+    type: 'resume'
+  }
 ]
 
 const INDEXLIST = [

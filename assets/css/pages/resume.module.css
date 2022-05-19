@@ -1,0 +1,10 @@
+.resumeContainer .resume_content {
+  padding: 16px;
+  width: 100%;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+}
+
+.resumeContainer .resume_content::-webkit-scrollbar {
+  display: none;
+}

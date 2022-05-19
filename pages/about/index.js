@@ -3,8 +3,8 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
 import Header from '../../components/Header';
-import IndexList from '../../components/IndexList';
 import AvatarInfo from '../../components/AvatarInfo';
+import AboutMyself from '../../components/aboutmyself';
 
 import AboutStyle from '../../assets/css/pages/about.module.css';
 
@@ -23,7 +23,7 @@ function About() {
             <AvatarInfo />
           </Col>
           <Col className={AboutStyle.about_content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
-            <IndexList />
+            <AboutMyself />
           </Col>
         </Row>
       </div>
