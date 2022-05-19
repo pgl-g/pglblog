@@ -1,0 +1,29 @@
+.resumeList_container {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.resume_personal h1 {
+  font-size: 30px;
+  font-size: 700;
+  color: #374151;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.resume_personal .personal_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal_content .personal_content_ul {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.personal_content_ul .personal_flex span {
+  font-size: 13px;
+  color: #333;
+}
