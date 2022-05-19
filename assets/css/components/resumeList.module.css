@@ -4,14 +4,14 @@
   padding: 15px;
 }
 
-.resume_personal h1 {
+.resume_con h1 {
   font-size: 30px;
-  font-size: 700;
+  font-weight: 700;
   color: #374151;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
-
+/* 个人 */
 .resume_personal .personal_content {
   display: flex;
   align-items: center;
@@ -19,11 +19,88 @@
 }
 
 .personal_content .personal_content_ul {
-  padding-left: 15px;
-  list-style: none;
+  /* padding-left: 15px; */
 }
 
 .personal_content_ul .personal_flex span {
   font-size: 13px;
   color: #333;
+}
+
+/* 教育 */
+.educationList_content_ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.educationList_content_ul .educationList_flex {
+  flex: 1;
+  /* padding-left: 15px; */
+}
+
+.educationList_content_ul .educationList_flex:nth-child(2) {
+  text-align: center;
+}
+.educationList_content_ul .educationList_flex:nth-child(3) {
+  text-align: right;
+}
+
+/* 专业技能 */
+.resume_skillList .skillList_content .skillList_content_ol {
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+/* 项目经历 */
+.resume_projectList .projectList_item .projectList_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.projectList_title span {
+  flex: 1;
+}
+
+.projectList_title span:nth-child(2) {
+  text-align: center;
+}
+
+.projectList_title span:nth-child(3) {
+  text-align: right;
+}
+
+.projectList_content_ul .projectList_flex {
+  margin-bottom: 5px;
+}
+
+.projectList_content_ul .projectList_flex ol {
+  padding-left: 15px;
+}
+
+/* 工作经历 */
+
+.workExpList_content .workExpList_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  
+}
+
+.workExpList_title span {
+  flex: 1;
+}
+
+.workExpList_title span:nth-child(2) {
+  text-align: center;
+}
+
+.workExpList_title span:nth-child(3) {
+  text-align: right;
+}
+
+.workExpList_workProject .workExpList_ul {
+  list-style: square;
+  padding-left: 15px;
 }

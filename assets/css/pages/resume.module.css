@@ -1,5 +1,7 @@
-.resumeContainer .resume_content {
+.resumeContainer .resume_wrap {
   padding: 16px;
+}
+.resumeContainer .resume_content {
   width: 100%;
   overflow-y: scroll;
   height: calc(100vh - 60px);
@@ -7,4 +9,12 @@
 
 .resumeContainer .resume_content::-webkit-scrollbar {
   display: none;
+}
+
+.resumeContainer .resume_right {
+  margin-left: 15px;
+}
+
+.resume_right .resume_download_pdf {
+  
 }
