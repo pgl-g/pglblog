@@ -18,14 +18,14 @@ request.interceptors.response.use((res) => {
 
 function createApi(config) {
   return (data) => {
-      const { lang, auth, cloudToken } = window.localStorage
+      // const { lang, auth, cloudToken } = window.localStorage
       Object.assign(config, {
-          headers: {
-              'Accept-Language': lang,
-              Authorization: auth || '',
-              Auth: auth || '',
-              'exchange-token': cloudToken || '',
-          },
+          // headers: {
+              // 'Accept-Language': lang,
+              // Authorization: auth || '',
+              // Auth: auth || '',
+              // 'exchange-token': cloudToken || '',
+          // },
       })
       if (config.method === 'get') {
           return request({
