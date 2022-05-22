@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const res = await login();
-      console.log(res)
+      console.log(res, '---')
     }
     fetchData();  
   })
