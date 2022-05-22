@@ -20,6 +20,7 @@ function Resume() {
     <div  className={ResumeStyle.resumeContainer}>
       <Head>
         <title>编程shy-个人简历</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <Header />
