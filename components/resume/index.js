@@ -1,12 +1,12 @@
-import React, { memo } from 'react';
+import React, { forwardRef } from 'react';
 
 
 import ResumeListStyle from '../../assets/css/components/resumeList.module.css';
 
-const Resume = memo(() => {
+const Resume = (props, resumeRef) => {
 
   return (
-    <div className={ResumeListStyle.resumeList_container}>
+    <div id="resumeId" ref={resumeRef} className={ResumeListStyle.resumeList_container}>
       {/* 个人信息 */}
       <div className={`${ResumeListStyle.resume_personal} ${ResumeListStyle.resume_con}`}>
         <h1>个人信息</h1>
@@ -193,7 +193,7 @@ const Resume = memo(() => {
       </div>
     </div>
   )
-})
+}
 
 
-export default Resume;
+export default forwardRef(Resume);
