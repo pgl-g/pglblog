@@ -83,7 +83,7 @@ const INDEXLIST = [
     logo: 'https://image.immortalboy.cn/public/uploads/2022/02/13/1644752217552675.png'
   },
   {
-    id: 1,
+    id: 7,
     username: 'pgl',
     starTime: '3月前',
     activeType: '个人分享',
@@ -93,7 +93,7 @@ const INDEXLIST = [
     logo: 'https://image.immortalboy.cn/public/uploads/2022/02/13/1644752217552675.png'
   },
   {
-    id: 7,
+    id: 8,
     username: 'pgl',
     starTime: '3月前',
     activeType: '个人分享',

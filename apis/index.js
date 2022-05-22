@@ -1,59 +1,30 @@
 import axios from 'axios';
-import { Message } from 'antd';
-import api from './api';
 
-const request = axios.create({
-  timeout: 3000,
-  baseURL: '/',
-  headers: {
-    'content-type': 'application/json'
-  }
-});
-
-
-// 请求响应拦截
-request.interceptors.response.use((res) => {
-  console.log(res);
+const service = axios.create({
+ baseURL: '/',
+ timeout: 30000 // 设置请求超时时间
 })
+// 请求拦截器
+service.interceptors.request.use(
+ (config) => {
+  // 在请求发送之前做一些token处理
+  return config;
+ },
+ (error) => {
+  // 发送失败
+  return Promise.reject(error);
+ }
+)
 
-function createApi(config) {
-  return (data) => {
-      // const { lang, auth, cloudToken } = window.localStorage
-      Object.assign(config, {
-          // headers: {
-              // 'Accept-Language': lang,
-              // Authorization: auth || '',
-              // Auth: auth || '',
-              // 'exchange-token': cloudToken || '',
-          // },
-      })
-      if (config.method === 'get') {
-          return request({
-              ...config,
-              params: {
-                  ...data,
-                  _t: Date.now()
-              }
-          }).catch((e) => {
-              if (e) Message.error(e.message || e.msg)
-              return e || {}
-          })
-      }
-      return request({
-          ...config,
-          data: {
-              ...data,
-          }
-      }).catch((e) => {
-          if (e) Message.error(e.message || e.msg)
-          return e || {}
-      })
-  }
-}
-const apis = {}
+// 响应拦截器
+service.interceptors.response.use((response) => {
+  const res = response.data;
+  return res;
+ },(error) => {
+  return Promise.reject(error, '测试数据不存在');
+ }
+)
 
-Object.entries(api).forEach((item) => {
-  apis[item[0]] = createApi(item[1])
-})
+	export default service
 
-export default request;
+
