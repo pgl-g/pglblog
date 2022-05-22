@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import IndexList from '../components/IndexList';
 import AvatarInfo from '../components/AvatarInfo';
 
-import { login } from '../apis/http';
+import { login } from '../service/http';
 
 export default function Home() {
 
