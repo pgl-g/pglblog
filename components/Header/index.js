@@ -20,7 +20,6 @@ const Header = memo(() => {
               <div>
                 <span className={styles.header_logo}>彭格列</span>
                 <span className={styles.header_text}>编程shy</span>
-                {/* <i className="iconfont">&#xe600;</i> */}
               </div>
             </div>
           </Col>

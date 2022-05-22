@@ -32,6 +32,11 @@
   padding-bottom: 12px;
 }
 
+.listItem .show_num {
+  display: flex;
+  align-items: center;
+}
+
 .listItem hr {
     border-bottom: 1px solid #f6f6f6;
 }

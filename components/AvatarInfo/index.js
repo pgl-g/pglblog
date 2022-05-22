@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import { GithubFilled, WechatFilled, QqOutlined } from '@ant-design/icons';
 import StyleAvatar from '../../assets/css/components/avatarInfo.module.css';
 
 
@@ -16,9 +15,9 @@ const AvatarInfo = memo(() => {
 
       <div className={StyleAvatar.avatarStatus}>
         <div className={StyleAvatar.avatarAccount}>
-            <GithubFilled className={StyleAvatar.avatarFlex} />
-            <WechatFilled className={StyleAvatar.avatarFlex} />
-            <QqOutlined className={StyleAvatar.avatarFlex} />
+            <i className={`iconfont ${StyleAvatar.avatarFlex}`}>&#xe63a;</i>
+            <i className={`iconfont ${StyleAvatar.avatarFlex}`}>&#xe600;</i>
+            <i className={`iconfont ${StyleAvatar.avatarFlex}`}>&#xe882;</i>
         </div>
       </div>
 

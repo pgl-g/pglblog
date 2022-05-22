@@ -7,4 +7,4 @@
     cssModules: true
   })
 
-  2. 头部导航点击问题
+2. 引入icofont注意，url需补充完整

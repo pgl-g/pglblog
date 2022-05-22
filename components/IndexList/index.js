@@ -1,6 +1,4 @@
 import React, { memo, useMemo } from 'react';
-import { EyeFilled } from '@ant-design/icons';
-
 import { INDEXLIST } from '../../assets/js/contants';
 import IndexListStyle from '../../assets/css/components/indexList.module.css';
 
@@ -28,8 +26,8 @@ const IndexList = memo(() => {
                 <div className={IndexListStyle.contents}>
                   {item.content}
                 </div>
-                <div className="show_num">
-                  <EyeFilled />
+                <div className={IndexListStyle.show_num}>
+                  <i className="iconfont">&#xe73d;</i>
                   {item.show}  
                 </div>
               </div>
