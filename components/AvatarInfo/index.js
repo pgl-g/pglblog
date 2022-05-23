@@ -1,4 +1,6 @@
 import React, { memo } from 'react';
+import { Tooltip } from 'antd';
+
 import StyleAvatar from '../../assets/css/components/avatarInfo.module.css';
 
 
@@ -15,9 +17,15 @@ const AvatarInfo = memo(() => {
 
       <div className={StyleAvatar.avatarStatus}>
         <div className={StyleAvatar.avatarAccount}>
+          <Tooltip placement="top" title="https://github.com/pgl-g">
             <i className={`iconfont ${StyleAvatar.avatarFlex}`}>&#xe63a;</i>
+          </Tooltip>
+          <Tooltip placement="top" title="diudiudiuxxx">
             <i className={`iconfont ${StyleAvatar.avatarFlex}`}>&#xe600;</i>
+          </Tooltip>
+          <Tooltip placement="top" title="1801688332">
             <i className={`iconfont ${StyleAvatar.avatarFlex}`}>&#xe882;</i>
+          </Tooltip>
         </div>
       </div>
 

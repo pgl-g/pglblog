@@ -1,3 +1,6 @@
+import StyleAvatar from '../css/components/avatarInfo.module.css';
+
+// 头部导航
 const NAVS = [
   {
     name: '首页',
@@ -21,6 +24,7 @@ const NAVS = [
   }
 ]
 
+// 发布文章
 const INDEXLIST = [
   {
     id: 1,
@@ -104,7 +108,8 @@ const INDEXLIST = [
   },
 ]
 
+
 export {
   NAVS,
-  INDEXLIST
+  INDEXLIST,
 }
