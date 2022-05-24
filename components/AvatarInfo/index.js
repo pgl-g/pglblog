@@ -4,15 +4,18 @@ import { Tooltip } from 'antd';
 import StyleAvatar from '../../assets/css/components/avatarInfo.module.css';
 
 
-const AvatarInfo = memo(() => {
+const AvatarInfo = memo((props) => {
+
+  const { userInfo } = props;
+
   return (
     <div className={StyleAvatar.avatarinfo}>
       
       <div className={StyleAvatar.avatar_userInfo}>
-        <img src="https://images.wosaimg.com/e0/de8374888df2087861989b02571e0fd8f4258c.jpeg" alt="" />
-        <span className={StyleAvatar.userName}>对对对你说的都对</span>
+        <img src={userInfo?.avator} alt="" />
+        <span className={StyleAvatar.userName}>{userInfo?.username}</span>
 
-        <div className={StyleAvatar.avatar_description}>这是我的个人博客，记录了一些研发过程中遇到的坑。</div>
+        <div className={StyleAvatar.avatar_description}>{userInfo?.feeling}</div>
       </div>
 
       <div className={StyleAvatar.avatarStatus}>
