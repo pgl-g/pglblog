@@ -2,10 +2,10 @@
 import axios from './index';
 
 
-const login = () => {
-  return axios.get('/apis/account/user/login');
+const getUserInfo = () => {
+  return axios.get('http://localhost:8890/auth');
 }
 
 export {
-  login
+  getUserInfo
 }

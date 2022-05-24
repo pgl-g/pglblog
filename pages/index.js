@@ -5,13 +5,13 @@ import Header from '../components/Header';
 import IndexList from '../components/IndexList';
 import AvatarInfo from '../components/AvatarInfo';
 
-import { login } from '../service/http';
+import { getUserInfo } from '../service/http';
 
 export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await login();
+      const res = await getUserInfo();
       console.log(res, '---')
     }
     fetchData();  
