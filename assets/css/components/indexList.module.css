@@ -5,6 +5,7 @@
 }
 
 .container .listItem {
+  cursor: pointer;
   padding: 10px;
 }
 

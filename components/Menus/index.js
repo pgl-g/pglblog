@@ -18,7 +18,11 @@ const Menus = memo((props) => {
       {
         navsPath.map(item => (
           <li key={item.type} className={`${router.asPath === item.link ? MenusStyles.active : MenusStyles.default} ${MenusStyles.menuItem}`}>
-            <Link href={item.link}>{item.name}</Link>
+            <Link href={item.link}>
+              <a>
+                {item.name}
+              </a>
+            </Link>
           </li>
         ))
       }
