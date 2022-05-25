@@ -6,9 +6,11 @@ import Header from '../../components/Header';
 import AvatarInfo from '../../components/AvatarInfo';
 import AboutMyself from '../../components/aboutmyself';
 
+import { getUserInfo } from '../../service/http';
+
 import AboutStyle from '../../assets/css/pages/about.module.css';
 
-function About() {
+const About = (props) => {
 
   return (
     <div className={AboutStyle.about_container}>
@@ -20,7 +22,7 @@ function About() {
         <Header />
         <Row justify="center" className="content">
           <Col xs={0} sm={0} md={8} lg={6} xl={4}>
-            <AvatarInfo />
+            <AvatarInfo userInfo={props?.userInfo} />
           </Col>
           <Col className={AboutStyle.about_content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
             <AboutMyself />
@@ -29,6 +31,25 @@ function About() {
       </div>
     </div>
   )
+}
+
+About.getInitialProps = async () => {
+
+  // 请求用户信息
+  const promiseUserInfo = new Promise(async (resovel) => {
+    const res = await getUserInfo();
+    if (res.code === '200') {
+      resovel(res.data);
+    }
+  })
+
+
+  const data = {
+    userInfo: await promiseUserInfo
+  }
+
+  return data;
+
 }
 
 export default About;

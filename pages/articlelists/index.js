@@ -6,9 +6,10 @@ import Header from '../../components/Header';
 import Collection from '../../components/Collection';
 import AvatarInfo from '../../components/AvatarInfo';
 
+import { getUserInfo } from '../../service/http';
 import ArticleListsStyle from '../../assets/css/pages/articlelists.module.css';
 
-function ArticleLists() {
+const ArticleLists = (props) => {
 
   return (
     <div className={ArticleListsStyle.articlelists_container}>
@@ -20,7 +21,7 @@ function ArticleLists() {
         <Header />
         <Row justify="center" className="content">
           <Col xs={0} sm={0} md={8} lg={6} xl={4}>
-            <AvatarInfo />
+            <AvatarInfo userInfo={props?.userInfo} />
           </Col>
           <Col className={ArticleListsStyle.content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
             <Collection />
@@ -29,6 +30,22 @@ function ArticleLists() {
       </div>
     </div>
   )
+}
+
+ArticleLists.getInitialProps = async () => {
+  // 请求用户信息
+  const promiseUserInfo = new Promise(async (resovel) => {
+    const res = await getUserInfo();
+    if (res.code === '200') {
+      resovel(res.data);
+    }
+  })
+
+  const data = {
+    userInfo: await promiseUserInfo
+  }
+
+  return data;
 }
 
 export default ArticleLists;

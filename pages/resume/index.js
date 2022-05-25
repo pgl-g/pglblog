@@ -7,7 +7,7 @@ import ResumeStyle from '../../assets/css/pages/resume.module.css';
 
 import { exportPDF } from '../../assets/js/until';
 
-function Resume() {
+const Resume = () => {
 
 
   const resumeRef = useRef(null);
