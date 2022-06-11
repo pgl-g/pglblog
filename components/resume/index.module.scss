@@ -1,0 +1,139 @@
+.resumeList_container {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  
+  .resume_con {
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  /* 个人 */
+  .resume_personal {
+   
+    .personal_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .personal_content_ul {
+        /* padding-left: 15px; */
+        
+        .personal_flex {
+
+          span {
+            font-size: 13px;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+
+  /* 教育 */
+  .resume_educationList {
+    .educationList_content {
+
+      .educationList_content_ul {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .educationList_flex {
+          flex: 1;
+          /* padding-left: 15px; */
+
+          &:nth-child(2) {
+            text-align: center;
+          }
+
+          &:nth-child(3) {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  /* 专业技能 */
+  .resume_skillList {
+    .skillList_content {
+      .skillList_content_ol {
+        margin-bottom: 0;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  /* 项目经历 */
+  .resume_projectList {
+    .projectList_item {
+
+      .projectList_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        span {
+          flex: 1;
+
+          &:nth-child(2) {
+            text-align: center;
+          }
+
+          &:nth-child(3) {
+            text-align: right;
+          }
+        }
+      }
+
+      .projectList_content_ul {
+
+        .projectList_flex {
+          margin-bottom: 5px;
+          
+          ol {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  /* 工作经历 */
+  .resume_workExpList {
+
+    .workExpList_content {
+
+      .workExpList_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        span {
+          flex: 1;
+
+          &:nth-child(2) {
+            text-align: center;
+          }
+          &:nth-child(3) {
+            text-align: right;
+          }
+        }
+      }
+      
+
+      .workExpList_workProject {
+        .workExpList_ul {
+          list-style: square;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}

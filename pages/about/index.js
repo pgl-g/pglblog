@@ -11,12 +11,12 @@ import AboutMyself from '@/components/aboutmyself';
 import { USERINFO } from '@/assets/js/contants';
 
 
-import AboutStyle from '../../assets/css/pages/about.module.css';
+import Style from './index.module.scss';
 
 const About = (props) => {
 
   return (
-    <div className={AboutStyle.about_container}>
+    <div className={Style.about_container}>
       <Head>
         <title>编程shy-关于我</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,7 +27,7 @@ const About = (props) => {
           <Col xs={0} sm={0} md={8} lg={6} xl={4}>
             <AvatarInfo userInfo={props?.userInfo} />
           </Col>
-          <Col className={AboutStyle.about_content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
+          <Col className={Style.about_content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
             <AboutMyself />
           </Col>
         </Row>

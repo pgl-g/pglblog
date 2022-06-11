@@ -3,7 +3,7 @@ import React, { memo, useMemo } from 'react';
 import { withRouter } from 'next/router';
 
 import { INDEXLIST } from '../../assets/js/contants';
-import IndexListStyle from '../../assets/css/components/indexList.module.css';
+import Style from './index.module.scss';
 
 
 const IndexList = memo((props) => {
@@ -23,23 +23,23 @@ const IndexList = memo((props) => {
   }
 
   return (
-    <div className={IndexListStyle.container}>
+    <div className={Style.container}>
       {
         dataSource.map(item => (
-          <div className={IndexListStyle.listItem} key={item.id} onClick={() => handletoDetaile(item.id)}>
-            <div className={IndexListStyle.item_title}>
-              <div className={`${IndexListStyle.tit_t} ${IndexListStyle.border_r}`}>{item.username}</div>
-              <div className={`${IndexListStyle.tit} ${IndexListStyle.border_r}`}>{item.starTime}</div>
-              <div className={`${IndexListStyle.tit}`}>{item.activeType}</div>
+          <div className={Style.listItem} key={item.id} onClick={() => handletoDetaile(item.id)}>
+            <div className={Style.item_title}>
+              <div className={`${Style.tit_t} ${Style.border_r}`}>{item.username}</div>
+              <div className={`${Style.tit} ${Style.border_r}`}>{item.starTime}</div>
+              <div className={`${Style.tit}`}>{item.activeType}</div>
             </div>
 
-            <div className={IndexListStyle.flex_content}>
-              <div className={IndexListStyle.flex_1}>
-                <div className={IndexListStyle.title}>{item.title}</div>
-                <div className={IndexListStyle.contents}>
+            <div className={Style.flex_content}>
+              <div className={Style.flex_1}>
+                <div className={Style.title}>{item.title}</div>
+                <div className={Style.contents}>
                   {item.content}
                 </div>
-                <div className={IndexListStyle.show_num}>
+                <div className={Style.show_num}>
                   <i className="iconfont">&#xe73d;</i>
                   {item.show}  
                 </div>

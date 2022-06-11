@@ -9,12 +9,12 @@ import AvatarInfo from '@/components/AvatarInfo';
 import { USERINFO } from '@/assets/js/contants';
 
 // import { getUserInfo } from '../../service/http';
-import ArticleListsStyle from '@/assets/css/pages/articlelists.module.css';
+import Style from './index.module.scss';
 
 const ArticleLists = (props) => {
 
   return (
-    <div className={ArticleListsStyle.articlelists_container}>
+    <div className={Style.articlelists_container}>
       <Head>
         <title>编程shy-作品集</title>
         <link rel="icon" href="/favicon.ico" />
@@ -25,7 +25,7 @@ const ArticleLists = (props) => {
           <Col xs={0} sm={0} md={8} lg={6} xl={4}>
             <AvatarInfo userInfo={props?.userInfo} />
           </Col>
-          <Col className={ArticleListsStyle.content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
+          <Col className={Style.content_right} xs={24} sm={24} md={12} lg={12} xl={12}>
             <Collection />
           </Col>
         </Row>

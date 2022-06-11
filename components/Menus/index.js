@@ -1,7 +1,7 @@
-import React, { useEffect, useState, memo, useMemo } from 'react';
+import React, { memo, useMemo } from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
-import MenusStyles from '../../assets/css/components/menu.module.css';
+import Style from './index.module.scss';
 
 
 // 下拉菜单
@@ -14,10 +14,10 @@ const Menus = memo((props) => {
 
 
   return (
-    <ul className={MenusStyles.header_menu}>
+    <ul className={Style.header_menu}>
       {
         navsPath.map(item => (
-          <li key={item.type} className={`${router.asPath === item.link ? MenusStyles.active : MenusStyles.default} ${MenusStyles.menuItem}`}>
+          <li key={item.type} className={`${router.asPath === item.link ? Style.active : Style.default} ${Style.menuItem}`}>
             <Link href={item.link}>
               <a>
                 {item.name}

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import DetaileListStyle from '@/assets/css/components/detaileList.module.css';
+import Style from './index.module.scss';
 
 const DetaileList = () => {
 
   return (
 
-    <div className={DetaileListStyle.container}>
+    <div className={Style.container}>
       详情页
     </div>
   )
