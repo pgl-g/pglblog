@@ -2,12 +2,14 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
-import Header from '../../components/Header';
-import Collection from '../../components/Collection';
-import AvatarInfo from '../../components/AvatarInfo';
+import Header from '@/components/Header';
+import Collection from '@/components/Collection';
+import AvatarInfo from '@/components/AvatarInfo';
 
-import { getUserInfo } from '../../service/http';
-import ArticleListsStyle from '../../assets/css/pages/articlelists.module.css';
+import { USERINFO } from '@/assets/js/contants';
+
+// import { getUserInfo } from '../../service/http';
+import ArticleListsStyle from '@/assets/css/pages/articlelists.module.css';
 
 const ArticleLists = (props) => {
 
@@ -34,15 +36,15 @@ const ArticleLists = (props) => {
 
 ArticleLists.getInitialProps = async () => {
   // 请求用户信息
-  const promiseUserInfo = new Promise(async (resovel) => {
-    const res = await getUserInfo();
-    if (res.code === '200') {
-      resovel(res.data);
-    }
-  })
+  // const promiseUserInfo = new Promise(async (resovel) => {
+  //   const res = await getUserInfo();
+  //   if (res.code === '200') {
+  //     resovel(res.data);
+  //   }
+  // })
 
   const data = {
-    userInfo: await promiseUserInfo
+    userInfo: USERINFO || {}
   }
 
   return data;

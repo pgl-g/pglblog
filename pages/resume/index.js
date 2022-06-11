@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { Row, Col, Button } from 'antd';
 import Head from 'next/head';
-import Header from '../../components/Header';
-import ResumeList from '../../components/resume';
-import ResumeStyle from '../../assets/css/pages/resume.module.css';
+import Header from '@/components/Header';
+import ResumeList from '@/components/resume';
+import ResumeStyle from '@/assets/css/pages/resume.module.css';
 
-import { exportPDF } from '../../assets/js/until';
+import { exportPDF } from '@/assets/js/until';
 
 const Resume = () => {
 

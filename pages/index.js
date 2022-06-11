@@ -1,11 +1,12 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
-import Header from '../components/Header';
-import IndexList from '../components/IndexList';
-import AvatarInfo from '../components/AvatarInfo';
+import Header from '@/components/Header';
+import IndexList from '@/components/IndexList';
+import AvatarInfo from '@/components/AvatarInfo';
 
-import { getUserInfo } from '../service/http';
+import { USERINFO } from '@/assets/js/contants';
+// import { getUserInfo } from '../service/http';
 
 const Home = (props) => {
 
@@ -35,16 +36,16 @@ const Home = (props) => {
 Home.getInitialProps = async () => {
 
   // 请求用户信息
-  const promiseUserInfo = new Promise(async (resovel) => {
-    const res = await getUserInfo();
-    if (res.code === '200') {
-      resovel(res.data);
-    }
-  })
+  // const promiseUserInfo = new Promise(async (resovel) => {
+  //   const res = await getUserInfo();
+  //   if (res.code === '200') {
+  //     resovel(res.data);
+  //   }
+  // })
 
 
   const data = {
-    userInfo: await promiseUserInfo
+    userInfo: USERINFO
   }
 
   return data;

@@ -2,11 +2,14 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
-import Header from '../../components/Header';
-import AvatarInfo from '../../components/AvatarInfo';
-import AboutMyself from '../../components/aboutmyself';
+import Header from '@/components/Header';
+import AvatarInfo from '@/components/AvatarInfo';
+import AboutMyself from '@/components/aboutmyself';
 
-import { getUserInfo } from '../../service/http';
+// import { getUserInfo } from '../../service/http';
+
+import { USERINFO } from '@/assets/js/contants';
+
 
 import AboutStyle from '../../assets/css/pages/about.module.css';
 
@@ -36,16 +39,16 @@ const About = (props) => {
 About.getInitialProps = async () => {
 
   // 请求用户信息
-  const promiseUserInfo = new Promise(async (resovel) => {
-    const res = await getUserInfo();
-    if (res.code === '200') {
-      resovel(res.data);
-    }
-  })
+  // const promiseUserInfo = new Promise(async (resovel) => {
+  //   const res = await getUserInfo();
+  //   if (res.code === '200') {
+  //     resovel(res.data);
+  //   }
+  // })
 
 
   const data = {
-    userInfo: await promiseUserInfo
+    userInfo: USERINFO
   }
 
   return data;

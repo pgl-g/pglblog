@@ -6,6 +6,15 @@
           {
               "libraryName":"antd"
           }
+      ],
+      [
+        "module-resolver",
+        {
+          "alias": {
+            "@/src": "./src",
+            "@/public": "./public"
+          }
+        }
       ]
   ]
 }

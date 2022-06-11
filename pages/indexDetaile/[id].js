@@ -2,10 +2,10 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
 
-import Header from '../../components/Header';
-import DetaileList from '../../components/detaileList';
+import Header from '@/components/Header';
+import DetaileList from '@/components/detaileList';
 
-import IndexDetaileStyle from '../../assets/css/pages/indexDetaile.module.css';
+import IndexDetaileStyle from '@/assets/css/pages/indexDetaile.module.css';
 
 function IndexDetaile() {
   return (
