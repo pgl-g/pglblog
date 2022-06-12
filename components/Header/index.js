@@ -1,8 +1,9 @@
 import React, { memo } from 'react';
-import { Row, Col } from 'antd';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Menu from '../Menus';
 import { NAVS } from '@/assets/js/contants';
+import logoPng from '@/assets/img/logo.png';
 import Styles from './index.module.scss';
 
 
@@ -14,22 +15,20 @@ const Header = memo(() => {
 
   return (
     <div className={Styles.header}>
-      <Row justify="center" align="middle">
-          <Col xs={0} sm={0} md={12} lg={12} xl={12}>
-            <div className={Styles.header_right}>
-              <Menu navs={NAVS} />
-            </div>
-          </Col>
+      <header className={Styles.header_container}>
+          <div className={Styles.header_left}>
+            <Image
+              className={Styles.header_logo}
+              src={logoPng}
+              alt="pgl"
+              width={60}
+              onClick={handleToHome}
+              height={40}
+            />
 
-          <Col xs={24} sm={24} md={8} lg={6} xl={4}>
-            <div className={Styles.header_left} onClick={handleToHome}>
-              <div>
-                <span className={Styles.header_logo}>彭格列</span>
-                <span className={Styles.header_text}>编程shy</span>
-              </div>
-            </div>
-          </Col>
-      </Row>
+            <Menu navs={NAVS} />
+          </div>
+      </header>
     </div>
   )
 })

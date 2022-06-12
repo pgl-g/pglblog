@@ -20,6 +20,11 @@ const NAVS = [
     name: '简历',
     link: '/resume',
     type: 'resume'
+  },
+  {
+    name: '写文章',
+    link: '/editor',
+    type: 'editor'
   }
 ]
 
