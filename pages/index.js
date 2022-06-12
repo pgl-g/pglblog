@@ -19,11 +19,12 @@ const Home = (props) => {
       <div>
         <Header />
         <Row justify="center" className="content">
-          <Col className="content-left" xs={0} sm={0} md={8} lg={6} xl={4}>
-            <AvatarInfo userInfo={props?.userInfo} />
-          </Col>
           <Col className="content-right" xs={24} sm={24} md={12} lg={12} xl={12}>
             <IndexList />
+          </Col>
+
+          <Col className="content-left" xs={0} sm={0} md={8} lg={6} xl={4}>
+            <AvatarInfo userInfo={props?.userInfo} />
           </Col>
         </Row>
       </div>
