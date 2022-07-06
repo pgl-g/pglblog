@@ -7,7 +7,6 @@ import Style from './index.module.scss';
 const AvatarInfo = memo((props) => {
 
   const { userInfo } = props;
-
   return (
     <div className={Style.avatarinfo}>
       

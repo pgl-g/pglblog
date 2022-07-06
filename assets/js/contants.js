@@ -30,7 +30,7 @@ const NAVS = [
 
 // 用户信息
 const USERINFO = {
-  "username": "对对对你说的都对",
+  "username": "对对对你说的很对",
   "userId": 1,
   "avator": "https://images.wosaimg.com/e0/de8374888df2087861989b02571e0fd8f4258c.jpeg",
   "feeling": "这是我的个人博客，记录了一些研发过程中遇到的坑。" 
