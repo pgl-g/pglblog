@@ -33,7 +33,7 @@ const Home = (props) => {
 }
 
 
-// 通过预渲染获取数据
+// 预渲染
 Home.getInitialProps = async () => {
 
   // 请求用户信息

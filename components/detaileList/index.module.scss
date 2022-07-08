@@ -1,4 +1,29 @@
 .container {
   width: 100%;
   background-color: #fff;
+
+  .container_wrapper {
+    padding: 0 16px;
+
+    .wrapper_mainHead {
+      padding-top: 20px;
+
+      .mainHead_title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      
+      .mainHead_time {
+        font-size: 16px;
+      }
+    }
+
+    .wrapper_mainSection {
+
+      .mainSection_title {
+        font-size: 38px;
+        font-weight: 500;
+      }
+    }
+  }
 }
