@@ -6,26 +6,26 @@ const NAVS = [
     link: '/',
     type: 'home'
   },
-  {
-    name: '作品集',
-    link: '/articlelists',
-    type: 'articlelists'
-  },
-  {
-    name: '关于我',
-    link: '/about',
-    type: 'about'
-  },
+  // {
+  //   name: '作品集',
+  //   link: '/articlelists',
+  //   type: 'articlelists'
+  // },
+  // {
+  //   name: '关于我',
+  //   link: '/about',
+  //   type: 'about'
+  // },
   {
     name: '简历',
     link: '/resume',
     type: 'resume'
   },
-  {
-    name: '写文章',
-    link: '/editor',
-    type: 'editor'
-  }
+  // {
+  //   name: '写文章',
+  //   link: '/editor',
+  //   type: 'editor'
+  // }
 ]
 
 // 用户信息

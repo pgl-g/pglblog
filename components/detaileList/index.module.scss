@@ -25,5 +25,25 @@
         font-weight: 500;
       }
     }
+    
+    .w_a_c {
+      text-align: left;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.75;
+
+      p {
+        font-size: 15px;
+      }
+
+      h4 {
+        font-weight: bold;
+        line-height: 1.5;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        font-size: 16px;
+      }
+    }
   }
 }
